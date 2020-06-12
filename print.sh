@@ -20,6 +20,3 @@ L_CYAN="\e[96m"
 
 DIM="\e[2m"
 
-export CLR
-export YELLOW
-export DIM
