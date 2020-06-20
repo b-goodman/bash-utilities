@@ -18,4 +18,17 @@ printf '%b' "
   ${CYAN}CYAN${CLR}
   ${L_CYAN}LIGHT CYAN${CLR}
 "
+# --------------------------
 
+source parse_opts.sh
+
+test(){
+  local _dry_run=""
+  local _F=""
+  parse_opts "$@"
+
+  echo "_dry_run: $_dry_run"
+  echo  "_F: $_F"
+}
+
+test --dry-run true -F test.txt

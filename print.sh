@@ -20,3 +20,11 @@ L_CYAN="\e[96m"
 
 DIM="\e[2m"
 
+
+info() {
+  echo -e "${L_CYAN}[INFO] ${CYAN}$1${CLR}"
+}
+
+success() {
+  echo -e "${L_GREEN}[SUCCESS] ${GREEN}$1${CLR}"
+}
